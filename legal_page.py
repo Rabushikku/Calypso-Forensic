@@ -1,4 +1,5 @@
 from functions import menu
+import extraction_process
 
 def prompt(menus, upper=False):
     menu.clear_console()
@@ -19,6 +20,9 @@ def legal_setup():
             
             if confirm != 'Y':
                 continue
+            
+            
+            extraction_process.start_extraction()
             
     except KeyboardInterrupt:
         menu.system_exit()

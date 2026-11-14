@@ -22,7 +22,7 @@ def main():
                 pass
     
     except KeyboardInterrupt:
-        menu.system_exit
+        menu.system_exit()
 
 if __name__ == '__main__':
     main()
